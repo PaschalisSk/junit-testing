@@ -2,9 +2,11 @@ package st;
 
 import java.math.BigInteger;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+import java.util.stream.IntStream;
 
 public class Parser {
 	public static final int INTEGER = 1;
@@ -100,24 +102,32 @@ public class Parser {
 	public List<Integer> getIntegerList(String option) {
 		String value = optionMap.getValue(option);
 		List<Integer> result = new ArrayList<>();
-		Pattern p = Pattern.compile("-?\\d+");
-		Matcher m = p.matcher(value);
-		while(m.find()){
-			result.add(Integer.parseInt(m.group()));
+		if (value.length() == 0 || value.substring(value.length() - 1).equals("-")) {
+			return result;
 		}
-//		int char_index = 0;
-//		int length = value.length();
-//		boolean is_negative = false;
-//		boolean is_range = false;
-//		while (char_index < length){
-//			do{
-//				char current_char = value.charAt(char_index);
-//			}
-//			if(!is_negative )
-//			result.add(Character.getNumericValue(current_char));
-//			char_index++;
-//		}
+		Pattern p = Pattern.compile("(-?\\d+-{1,2}\\d+)|(-?\\d+)");
+		Matcher m = p.matcher(value);
+		while (m.find()) {
+			if (m.group(1) == null){
+				result.add(Integer.parseInt(m.group(2)));
+			} else {
+				Pattern split_pattern = Pattern.compile("(-?\\d+)-(-?\\d+)");
+				Matcher split_matcher = split_pattern.matcher(m.group(1));
 
+				int first_bound = 0, second_bound = 0;
+				while (split_matcher.find()) {
+					first_bound = Integer.parseInt(split_matcher.group(1));
+					second_bound = Integer.parseInt(split_matcher.group(2));
+				}
+
+				if (first_bound < second_bound) {
+					IntStream.rangeClosed(first_bound, second_bound).forEach(result::add);
+				} else {
+					IntStream.rangeClosed(second_bound, first_bound).forEach(result::add);
+				}
+			}
+		}
+		Collections.sort(result);
 		return result;
 	}
 	

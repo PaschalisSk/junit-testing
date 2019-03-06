@@ -8,7 +8,6 @@ import org.junit.Before;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
@@ -74,7 +73,7 @@ public class Task3_TDD_1 {
         assertEquals(expected_list4, parser.getIntegerList("list4"));
         List<Integer> expected_list5 = Arrays.asList(1, 2, 3);
         assertEquals(expected_list5, parser.getIntegerList("list5"));
-        List<Integer> expected_list6 = Arrays.asList(3, 2, 1);
+        List<Integer> expected_list6 = Arrays.asList(1, 2, 3);
         assertEquals(expected_list6, parser.getIntegerList("list6"));
     }
 
@@ -116,11 +115,11 @@ public class Task3_TDD_1 {
         assertEquals(expected_list1, parser.getIntegerList("list1"));
         List<Integer> expected_list2 = Arrays.asList(-1, 0, 1, 2);
         assertEquals(expected_list2, parser.getIntegerList("list2"));
-        List<Integer> expected_list3 = Arrays.asList(-1, -2, -3);
+        List<Integer> expected_list3 = Arrays.asList(-3, -2, -1);
         assertEquals(expected_list3, parser.getIntegerList("list3"));
-        List<Integer> expected_list4 = Arrays.asList(-1, -2, -3, -5);
+        List<Integer> expected_list4 = Arrays.asList(-5, -3, -1);//TODO
         assertEquals(expected_list4, parser.getIntegerList("list4"));
-        List<Integer> expected_list5 = Arrays.asList(-1, -4);
+        List<Integer> expected_list5 = Arrays.asList(-4, -1);
         assertEquals(expected_list5, parser.getIntegerList("list5"));
         List<Integer> expected_list6 = Arrays.asList(-1);
         assertEquals(expected_list6, parser.getIntegerList("list6"));

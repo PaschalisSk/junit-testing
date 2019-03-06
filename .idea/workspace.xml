@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9bd86d89-1874-4902-aace-2b151bf3880b" name="Default Changelist" comment="" />
+    <list default="true" id="9bd86d89-1874-4902-aace-2b151bf3880b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SourceCode/src/st/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode/src/st/Parser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SourceCode/tests/Task3_TDD_1.java" beforeDir="false" afterPath="$PROJECT_DIR$/SourceCode/tests/Task3_TDD_1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ST_Coursework1819-master/st/Parser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ST_Coursework1819-master/st/Parser.class" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -10,56 +15,22 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/ST_Coursework1819_master$Task2_Coverage.exec" NAME="Task2_Coverage Coverage Results" MODIFIED="1551885494391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>st.*</FILTER>
-    </SUITE>
     <SUITE FILE_PATH="coverage/ST_Coursework1819_master$Task1_Functional.es" NAME="Task1_Functional Coverage Results" MODIFIED="1551824530236" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="emma" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
-      <FILTER>st.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/ST_Coursework1819_master$Task2_Coverage.ic" NAME="Task2_Coverage Coverage Results" MODIFIED="1551869274100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>st.Parser</FILTER>
-      <FILTER>st.OptionMap</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/ST_Coursework1819_master$Task3_TDD_1.exec" NAME="Task3_TDD_1 Coverage Results" MODIFIED="1551885479427" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>st.*</FILTER>
     </SUITE>
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="123" />
+    <option name="myElementSize" value="160" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task3_TDD_1.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="364">
-              <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
+            <state relative-caret-position="287">
+              <caret line="120" column="63" selection-start-line="120" selection-start-column="63" selection-end-line="120" selection-end-column="63" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task1_Functional.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="69">
-              <caret line="653" column="45" selection-start-line="653" selection-start-column="45" selection-end-line="653" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2379#2380#0" expanded="true" />
-                <element signature="e#2429#2430#0" expanded="true" />
-                <element signature="e#3363#3364#0" expanded="true" />
-                <element signature="e#3420#3421#0" expanded="true" />
-                <element signature="e#3515#3516#0" expanded="true" />
-                <element signature="e#3572#3573#0" expanded="true" />
-                <element signature="e#20577#20578#0" expanded="true" />
-                <element signature="e#20635#20636#0" expanded="true" />
-                <element signature="e#20700#20701#0" expanded="true" />
-                <element signature="e#20754#20755#0" expanded="true" />
-                <element signature="e#20938#20939#0" expanded="true" />
-                <element signature="e#20996#20997#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -68,32 +39,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SourceCode/src/st/Parser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="235">
-              <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
+            <state relative-caret-position="251">
+              <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5433#5434#0" expanded="true" />
-                <element signature="e#5467#5468#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task2_Coverage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-5201">
-              <caret line="367" selection-start-line="367" selection-end-line="367" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2377#2378#0" expanded="true" />
-                <element signature="e#2427#2428#0" expanded="true" />
-                <element signature="e#3361#3362#0" expanded="true" />
-                <element signature="e#3418#3419#0" expanded="true" />
-                <element signature="e#3513#3514#0" expanded="true" />
-                <element signature="e#3570#3571#0" expanded="true" />
-                <element signature="e#3671#3672#0" expanded="true" />
-                <element signature="e#3728#3729#0" expanded="true" />
+                <element signature="e#5951#5952#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -109,15 +59,18 @@
       <find>name_emp</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/SourceCode/src/CommandLineParserTest.java" />
         <option value="$PROJECT_DIR$/SourceCode/tests/Task1_Functional.java" />
         <option value="$PROJECT_DIR$/SourceCode/tests/Task3_TDD_2.java" />
+        <option value="$PROJECT_DIR$/SourceCode/tests/Task2_Coverage.java" />
         <option value="$PROJECT_DIR$/SourceCode/src/st/Parser.java" />
         <option value="$PROJECT_DIR$/SourceCode/tests/Task3_TDD_1.java" />
-        <option value="$PROJECT_DIR$/SourceCode/tests/Task2_Coverage.java" />
       </list>
     </option>
   </component>
@@ -132,6 +85,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,7 +126,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,7 +135,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551888055116" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1551912565912" />
     <property name="last_opened_file_path" value="$APPLICATION_HOME_DIR$/plugins/emma/lib" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -308,43 +261,44 @@
       <workItem from="1551835363819" duration="1143000" />
       <workItem from="1551867550774" duration="12326000" />
       <workItem from="1551885344784" duration="2864000" />
+      <workItem from="1551894531628" duration="8007000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Task3_TDD_1 - 2019.03.06 at 13h 44m 44s.xml">
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 19h 10m 07s.xml">
       <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task3_TDD_1 - 2019.03.06 at 13h 44m 48s.xml">
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 19h 10m 21s.xml">
       <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task3_TDD_1 - 2019.03.06 at 13h 45m 18s.xml">
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 10m 19s.xml">
       <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task3_TDD_1 - 2019.03.06 at 15h 18m 01s.xml">
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 19m 22s.xml">
       <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task2_Coverage - 2019.03.06 at 15h 18m 12s.xml">
-      <configuration name="Task2_Coverage" configurationId="JUnit" />
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 29m 50s.xml">
+      <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task2_Coverage - 2019.03.06 at 15h 18m 15s.xml">
-      <configuration name="Task2_Coverage" configurationId="JUnit" />
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 41m 51s.xml">
+      <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task2_Coverage - 2019.03.06 at 15h 36m 30s.xml">
-      <configuration name="Task2_Coverage" configurationId="JUnit" />
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 43m 00s.xml">
+      <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task2_Coverage - 2019.03.06 at 15h 37m 58s.xml">
-      <configuration name="Task2_Coverage" configurationId="JUnit" />
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 43m 13s.xml">
+      <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task2_Coverage - 2019.03.06 at 15h 49m 26s.xml">
-      <configuration name="Task2_Coverage" configurationId="JUnit" />
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 44m 16s.xml">
+      <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Task1_Functional - 2019.03.06 at 15h 49m 59s.xml">
-      <configuration name="Task1_Functional" configurationId="JUnit" />
+    <history-entry file="Task3_TDD_1 - 2019.03.06 at 22h 45m 45s.xml">
+      <configuration name="Task3_TDD_1" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48454000" />
+    <option name="totallyTimeSpent" value="56461000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,8 +311,41 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="55" y="-7" width="1488" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16036415" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16246499" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4992997" visible="true" weight="0.32573727" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41286862" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3297587" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007003" side_tool="true" weight="0.34986594" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.3297587" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Capture Analysis" order="7" />
+      <window_info anchor="right" id="Palette&#9;" order="8" />
+      <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3697479" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16246499" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -388,7 +375,7 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info anchor="right" id="Coverage" order="9" side_tool="true" weight="0.3697479" />
-    </layout>
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -396,37 +383,47 @@
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
       <expression>
-        <expression-string>parser.getIntegerList(&quot;list5&quot;)</expression-string>
+        <expression-string>Range.closed(1, 500)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>parser.getIntegerList(&quot;list4&quot;)</expression-string>
+        <expression-string>split_matcher.group(0)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>parser.getIntegerList(&quot;list3&quot;)</expression-string>
+        <expression-string>split_matcher.group(2)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>parser.getIntegerList(&quot;list2&quot;)</expression-string>
+        <expression-string>split_matcher.group(1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>parser.getIntegerList(&quot;list1&quot;)</expression-string>
+        <expression-string>m.group(1)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>parser.toString()</expression-string>
+        <expression-string>m.group(2)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
       <expression>
-        <expression-string>parser.getInteger(&quot;opt1&quot;)</expression-string>
+        <expression-string>split_pattern.matcher(m.group(2)).results()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>m.group(0)</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>m.group(3)</expression-string>
         <language-id>JAVA</language-id>
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
@@ -503,9 +500,19 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SourceCode/src/st/OptionMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task1_Functional.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
+        <state relative-caret-position="10438">
           <caret line="653" column="45" selection-start-line="653" selection-start-column="45" selection-end-line="653" selection-end-column="45" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -525,41 +532,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task3_TDD_1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="364">
-          <caret line="32" column="61" selection-start-line="32" selection-start-column="61" selection-end-line="32" selection-end-column="61" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceCode/src/st/Parser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="235">
-          <caret line="106" column="9" selection-start-line="106" selection-start-column="9" selection-end-line="106" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5433#5434#0" expanded="true" />
-            <element signature="e#5467#5468#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SourceCode/src/st/OptionMap.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="118" column="5" selection-start-line="118" selection-start-column="5" selection-end-line="118" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task2_Coverage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5201">
+        <state relative-caret-position="17">
           <caret line="367" selection-start-line="367" selection-end-line="367" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -571,6 +546,34 @@
             <element signature="e#3570#3571#0" expanded="true" />
             <element signature="e#3671#3672#0" expanded="true" />
             <element signature="e#3728#3729#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceCode/src/st/Parser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="120" column="17" lean-forward="true" selection-start-line="120" selection-start-column="17" selection-end-line="120" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5951#5952#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SourceCode/tests/Task3_TDD_1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="287">
+          <caret line="120" column="63" selection-start-line="120" selection-start-column="63" selection-end-line="120" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
