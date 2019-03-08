@@ -102,7 +102,9 @@ public class Parser {
 	public List<Integer> getIntegerList(String option) {
 		String value = optionMap.getValue(option);
 		List<Integer> result = new ArrayList<>();
-		if (value.length() == 0 || value.substring(value.length() - 1).equals("-")) {
+		Pattern invalid_dash = Pattern.compile("(-([^\\d,-]|$))|(-{2}([\\D]|$))|((^|[\\D])-{2})");
+		Matcher invalid_dash_matcher = invalid_dash.matcher(value);
+		if (value.length() == 0 || invalid_dash_matcher.find()) {
 			return result;
 		}
 		Pattern p = Pattern.compile("(-?\\d+-{1,2}\\d+)|(-?\\d+)");
