@@ -68,6 +68,15 @@ public class Task2_Coverage {
         assertEquals(5, parser.getInteger("o"));
     }
 
+    @Test
+    public void test_add_shortcut_override_name_after_assignment() {
+        parser.add("output", "o", Parser.INTEGER);
+        int parsed = parser.parse("--output=5");
+        assertEquals(0, parsed);
+        parser.add("output", "o", Parser.INTEGER);
+        assertEquals(0, parser.getInteger("o"));
+    }
+
 
     /**
      * Specification 3.2
@@ -94,11 +103,27 @@ public class Task2_Coverage {
     }
 
     @Test
+    public void test_add_shortcut_name_underscore_middle() {
+        parser.add("out_put", "o", Parser.STRING);
+        int parsed = parser.parse("--out_put=output.txt");
+        assertEquals(0, parsed);
+        assertEquals("output.txt", parser.getString("out_put"));
+    }
+
+    @Test
     public void test_add_shortcut_name_number() {
         parser.add("output1", "o", Parser.STRING);
         int parsed = parser.parse("--output1=output.txt");
         assertEquals(0, parsed);
         assertEquals("output.txt", parser.getString("output1"));
+    }
+
+    @Test
+    public void test_add_shortcut_name_number_middle() {
+        parser.add("out123put", "o", Parser.STRING);
+        int parsed = parser.parse("--out123put=output.txt");
+        assertEquals(0, parsed);
+        assertEquals("output.txt", parser.getString("out123put"));
     }
 
     @Test(expected = Exception.class)
@@ -143,11 +168,27 @@ public class Task2_Coverage {
     }
 
     @Test
+    public void test_add_shortcut_shortcut_underscore_middle() {
+        parser.add("output", "o_1", Parser.STRING);
+        int parsed = parser.parse("-o_1=output.txt");
+        assertEquals(0, parsed);
+        assertEquals("output.txt", parser.getString("o_1"));
+    }
+
+    @Test
     public void test_add_shortcut_shortcut_number() {
         parser.add("output", "o1", Parser.STRING);
         int parsed = parser.parse("-o1=output.txt");
         assertEquals(0, parsed);
         assertEquals("output.txt", parser.getString("o1"));
+    }
+
+    @Test
+    public void test_add_shortcut_shortcut_number_middle() {
+        parser.add("output", "o1a", Parser.STRING);
+        int parsed = parser.parse("-o1a=output.txt");
+        assertEquals(0, parsed);
+        assertEquals("output.txt", parser.getString("o1a"));
     }
 
     @Test(expected = Exception.class)
@@ -236,13 +277,11 @@ public class Task2_Coverage {
         parser.add("opt1", "o1", Parser.BOOLEAN);
         parser.add("opt2", "o2", Parser.BOOLEAN);
         parser.add("opt3", "o3", Parser.BOOLEAN);
-        parser.add("opt4", "o4", Parser.BOOLEAN);
         int parsed = parser.parse("-o1=false -o2=0 -o3=FaLSe");
         assertEquals(0, parsed);
         assertFalse(parser.getBoolean("o1"));
         assertFalse(parser.getBoolean("o2"));
         assertFalse(parser.getBoolean("o3"));
-        assertFalse(parser.getBoolean("o4"));
     }
 
     /**
@@ -275,6 +314,15 @@ public class Task2_Coverage {
         assertEquals(5, parser.getInteger("output"));
     }
 
+    @Test
+    public void test_add_override_name_after_assignment() {
+        parser.add("output", Parser.INTEGER);
+        int parsed = parser.parse("--output=5");
+        assertEquals(0, parsed);
+        parser.add("output", Parser.INTEGER);
+        assertEquals(0, parser.getInteger("output"));
+    }
+
 
     /**
      * Specification 4.2
@@ -301,11 +349,27 @@ public class Task2_Coverage {
     }
 
     @Test
+    public void test_add_name_underscore_middle() {
+        parser.add("out_put", Parser.STRING);
+        int parsed = parser.parse("--out_put=output.txt");
+        assertEquals(0, parsed);
+        assertEquals("output.txt", parser.getString("out_put"));
+    }
+
+    @Test
     public void test_add_name_number() {
         parser.add("output1", Parser.STRING);
         int parsed = parser.parse("--output1=output.txt");
         assertEquals(0, parsed);
         assertEquals("output.txt", parser.getString("output1"));
+    }
+
+    @Test
+    public void test_add_name_number_middle() {
+        parser.add("out123put", Parser.STRING);
+        int parsed = parser.parse("--out123put=output.txt");
+        assertEquals(0, parsed);
+        assertEquals("output.txt", parser.getString("out123put"));
     }
 
     @Test(expected = Exception.class)
@@ -381,12 +445,10 @@ public class Task2_Coverage {
         parser.add("opt1",Parser.BOOLEAN);
         parser.add("opt2",Parser.BOOLEAN);
         parser.add("opt3",Parser.BOOLEAN);
-        parser.add("opt4",Parser.BOOLEAN);
         int parsed = parser.parse("--opt1=false --opt2=0 --opt3=FaLSe");
         assertEquals(0, parsed);
         assertFalse(parser.getBoolean("opt1"));
         assertFalse(parser.getBoolean("opt2"));
-        assertFalse(parser.getBoolean("opt3"));
         assertFalse(parser.getBoolean("opt3"));
     }
 
@@ -483,7 +545,7 @@ public class Task2_Coverage {
         parser.add("opt1", "o1", Parser.STRING);
         int parsed = parser.parse("--opt1%value");
         assertEquals(0, parsed);
-        // From the pdf: 'Assigning a value to the option can either be using a “=” or a space.
+        // From the pdf: 'Assigning a value to the option can either be using a "=" or a space.
         // option=value and option value are both valid.
         // Here, opt1 gets a value without using "=" or space
         // The specification states that an option gets a value ONLY with "=" or space

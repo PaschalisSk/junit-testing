@@ -102,7 +102,11 @@ public class Parser {
 	public List<Integer> getIntegerList(String option) {
 		String value = optionMap.getValue(option);
 		List<Integer> result = new ArrayList<>();
-		Pattern invalid_dash = Pattern.compile("(-([^\\d,-]|$))|(-{2}([\\D]|$))|((^|[\\D])-{2})");
+		// Match (dash followed by not digit or not another dash or end of line) OR
+		// (2 dashes followed by not digit or end of line) OR
+		// (start of line or not digit followed by double dash) OR
+		// (three numbers connected with 1 or 2 dashes)
+		Pattern invalid_dash = Pattern.compile("(-([^\\d,-]|$))|(-{2}([\\D]|$))|((^|[\\D])-{2})|(\\d+-{1,2}\\d+-{1,2}\\d+)");
 		Matcher invalid_dash_matcher = invalid_dash.matcher(value);
 		if (value.length() == 0 || invalid_dash_matcher.find()) {
 			return result;
