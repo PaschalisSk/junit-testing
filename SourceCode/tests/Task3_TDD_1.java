@@ -92,7 +92,7 @@ public class Task3_TDD_1 {
         parser.add("list8", "l8", Parser.STRING);
         int parsed = parser.parse("-l1=1-1 -l2=1-2 -l3=1,02-3 -l4=3-1 -l5=a10-8 -l6='a10- 8' -l7=1-2-3 -l8=1-2,2-3");
         assertEquals(0, parsed);
-        List<Integer> expected_list1 = Arrays.asList(1);
+        List<Integer> expected_list1 = new ArrayList<>();
         assertEquals(expected_list1, parser.getIntegerList("list1"));
         List<Integer> expected_list2 = Arrays.asList(1, 2);
         assertEquals(expected_list2, parser.getIntegerList("list2"));
@@ -135,7 +135,7 @@ public class Task3_TDD_1 {
         assertEquals(expected_list4, parser.getIntegerList("list4"));
         List<Integer> expected_list5 = Arrays.asList(-4, -1);
         assertEquals(expected_list5, parser.getIntegerList("list5"));
-        List<Integer> expected_list6 = Arrays.asList(-1);
+        List<Integer> expected_list6 = new ArrayList<>();
         assertEquals(expected_list6, parser.getIntegerList("list6"));
         List<Integer> expected_list7 = new ArrayList<>();
         assertEquals(expected_list7, parser.getIntegerList("list7"));
@@ -151,12 +151,14 @@ public class Task3_TDD_1 {
         parser.add("list1", "l1", Parser.STRING);
         parser.add("list2", "l2", Parser.STRING);
         parser.add("list3", "l3", Parser.STRING);
-        int parsed = parser.parse("-l1=-1-- -l2='1- ' -l3=1a-");
+        parser.add("list4", "l4", Parser.STRING);
+        int parsed = parser.parse("-l1=-1-- -l2='1- ' -l3=1a- -l4='1- 2'");
         assertEquals(0, parsed);
         List<Integer> empty_list = new ArrayList<>();
         assertEquals(empty_list, parser.getIntegerList("list1"));
         assertEquals(empty_list, parser.getIntegerList("list2"));
         assertEquals(empty_list, parser.getIntegerList("list3"));
+        assertEquals(empty_list, parser.getIntegerList("list4"));
     }
 
     /**
@@ -171,4 +173,36 @@ public class Task3_TDD_1 {
         assertEquals(expected_list1, parser.getIntegerList("list1"));
     }
 
+    @Test
+    public void test_order() {
+        parser.add("list1", "l1", Parser.STRING);
+        int parsed = parser.parse("--list1=-5,-2+-1-3,-24,00-2,45.abc3");
+        assertEquals(0, parsed);
+        List<Integer> expected_list1 = Arrays.asList(-24,-5,-2,-1,0, 0,1,1,2,2,3,3,45);
+        assertEquals(expected_list1, parser.getIntegerList("list1"));
+    }
+
+    @Test
+    public void test_null2() {
+        parser.add("list1", "l1", Parser.STRING);
+        int parsed = parser.parse("--list1=NULL2");
+        assertEquals(0, parsed);
+        List<Integer> expected_list1 = Arrays.asList(2);
+        assertEquals(expected_list1, parser.getIntegerList("list1"));
+    }
+
+    @Test
+    public void test_null() {
+        parser.add("list1", "l1", Parser.STRING);
+        int parsed = parser.parse("--list1=NULL");
+        assertEquals(0, parsed);
+        List<Integer> expected_list1 = new ArrayList<>();
+        assertEquals(expected_list1, parser.getIntegerList("list1"));
+    }
+
+    @Test
+    public void test_empty_string() {
+        List<Integer> expected_list1 = new ArrayList<>();
+        assertEquals(expected_list1, parser.getIntegerList(""));
+    }
 }

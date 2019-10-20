@@ -128,8 +128,10 @@ public class Parser {
 
 				if (first_bound < second_bound) {
 					IntStream.rangeClosed(first_bound, second_bound).forEach(result::add);
-				} else {
+				} else if (first_bound > second_bound) {
 					IntStream.rangeClosed(second_bound, first_bound).forEach(result::add);
+				} else {
+					return new ArrayList<>();
 				}
 			}
 		}
